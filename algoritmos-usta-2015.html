@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Automata Graph Validator</title>
+    <meta name="description" content="Presentation for Análisis de Algoritmos USTA Tunja 2015-2">
+    <meta name="author" content="Cravacuore Damián">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+
+    <!-- Slides selected theme -->
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link  = document.createElement( 'link' );
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-markdown>
+          ## Automata Graph Validator
+          #### Proyecto Final Análisis de Algoritmos 2015-2
+
+          ![Logo USTA](./images/algoritmos-usta-2015/logo.jpg "Logo USTA")
+
+          Integrantes:
+            * Seidler, Ezequiel Nicolás
+            * Cravacuore, Damián
+        </section>
+
+        <section>
+          <section data-markdown>
+            ### ¿Qué herramientas utilizamos?
+          </section>
+
+          <section tagcloud large>
+            Flask
+            Python
+            Github
+            Heroku
+            TravisCI
+            AngularJS
+            Foundation
+          </section>
+
+          <section data-markdown>
+            ### Python 2.7
+            ![python](./images/algoritmos-usta-2015/python-logo.png)
+
+              * Back-end
+              * OOP
+              * Ligero
+              * Rápida configuración
+              * Relacionado a framework..
+          </section>
+
+          <section data-markdown>
+            ### Flask
+            ![flask](./images/algoritmos-usta-2015/flask-logo.png)
+
+              * Micro Framework para Python
+              * Jinja2 Templating
+              * Buena documentación
+              * Simple y rápido
+          </section>
+
+          <section data-markdown>
+            ### AngularJS
+            ![angular](./images/algoritmos-usta-2015/angularjs-logo.png)
+
+              * Facilidades para front-end
+              * Directivas ng-repeat, etc.
+              * Framework popular
+              * Dynamic single-page apps
+          </section>
+
+          <section data-markdown>
+            ### ZURB Foundation
+            ![foundation](./images/algoritmos-usta-2015/foundation-logo.png)
+
+              * No es Bootstrap :P
+              * Responsive design
+              * Componentes AngularJS con angular-foundation
+          </section>
+
+          <section data-markdown>
+            ### Github
+            ![github](./images/algoritmos-usta-2015/github-logo.png)
+
+              * Repositorio git
+              * Buena disponibilidad
+              * Integración con gran variedad de servicios
+          </section>
+
+          <section data-markdown>
+            ### TravisCI
+            ![travis](./images/algoritmos-usta-2015/travisci-logo.png)
+
+              * Servidor de Integración Continua
+              * Simple
+              * Integrado con Github
+              * Automatización de tareas (Tests!)
+          </section>
+
+          <section data-markdown>
+            ### Heroku
+            ![heroku](./images/algoritmos-usta-2015/heroku-logo.png)
+
+              * Deploy server
+              * Cloud platform
+              * Gratuito para pequeños proyectos
+              * Simple integración con Github
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            ## ¿Qué metodologías empleamos?
+          </section>
+
+          <section data-markdown>
+            ### TDD - Test-Driven Development
+
+              * Diseño mientras creo mis tests
+              * Modelo acotado, sin cosas de más
+              * Aseguro que no rompo funcionalidades anteriores con nuevos cambios
+
+            ![tdd](./images/algoritmos-usta-2015/tdd.png)
+          </section>
+
+          <section data-markdown>
+            ### Mockups
+
+              * Mostrar ideas de diseño al 'cliente'
+              * Prototipado antes de programar
+              * Estructura la navegación
+
+            ![mockup1](./images/algoritmos-usta-2015/mockup-table.png)
+            ![mockup2](./images/algoritmos-usta-2015/mockup-validation.png)
+          </section>
+
+          <section data-markdown>
+            ### UML - Unified Modeling Language
+
+              * Diseño de ideas
+              * Modelado antes de programar
+
+            ![uml](./images/algoritmos-usta-2015/uml.png)
+            ![uml_final](./images/algoritmos-usta-2015/uml_final.png)
+          </section>
+        </section>
+
+        <section data-background="#d67e3e" data-markdown>
+          # Demo
+          [automata-validator.herokuapp.com](https://automata-validator.herokuapp.com)
+        </section>
+
+        <section style="text-align: left;" data-markdown>
+          ## ¿Preguntas?
+            ![questions](./images/algoritmos-usta-2015/questions.jpg)
+        </section>
+
+        <section style="text-align: left;" data-markdown>
+          ## THE END - Gracias!
+
+          * Links de interés:
+            * [Github repo](https://github.com/cravacuore/automata-graph-validator)
+            * [Demo online - Heroku](http://automata-validator.herokuapp.com/)
+
+            * Esta presentación fue hecha con [reveal.js](https://github.com/hakimel/reveal.js)
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <!-- Reveal Settings -->
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          numbers: false,
+          markers: true,
+          themes: [
+            { name: 'Night', theme: 'css/theme/night.css' },
+            { name: 'Black', theme: 'css/theme/black.css' },
+            { name: 'Solarized', theme: 'css/theme/solarized.css' },
+          ],
+          transition: false,
+          openButton: false,
+          openSlideNumber: false,
+          keyboard: true,
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/menu/menu.js' },
+          { src: 'plugin/tagcloud/tagcloud.js', async: true }
+        ]
+      });
+
+    </script>
+
+    </body>
+  </html>
+
