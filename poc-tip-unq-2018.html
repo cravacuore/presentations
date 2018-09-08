@@ -34,13 +34,47 @@
     <div class="reveal">
       <div class="slides">
 
-        <section data-markdown>
-          ## Presentación Prueba de Concepto TIP
-          #### rawRSS - TIP - UNQ - 2018
+        <section>
+          <section data-markdown>
+            ## Presentación Prueba de Concepto TIP
+            #### rawRSS - TIP - UNQ - 2018
 
-          ![Logo rawRSS](./images/poc-tip-unq-2018/rawRSS-icon.png "Logo rawRSS")
+            ![Logo rawRSS](./images/poc-tip-unq-2018/rawRSS-icon.png "Logo rawRSS")
 
-          Cravacuore, Damián
+            Cravacuore, Damián
+          </section>
+
+          <section data-markdown>
+            ### Motivación
+
+              * Qué es RSS? #reviveRSS
+                * Rich Site Summary
+                * Standard (Wordpress)
+              * Lector favorito (Inoreader)
+                * Privativo
+                * Features innecesarios
+                  * Integración con redes sociales
+                  * otros features pagos
+                * No es local, no puedo leer offline
+          </section>
+
+          <section data-markdown>
+              ![inoreader](./images/poc-tip-unq-2018/inoreader-example.png)
+          </section>
+
+          <section data-markdown>
+            ### Alcance
+
+              * Manejo de feeds
+              * Posibles integraciones:
+                * Canales YouTube
+                * Spotify (band follow)
+
+              * Ideas futuras
+                * 'Inteligencia' sobre actualización de feeds (AI)
+                * Deploy 'in the cloud'
+                  * Python backend sobre AWS
+          </section>
         </section>
 
         <section>
@@ -52,28 +86,46 @@
             React
             Electron
             Python
+            Django?
+            Flask?
+            ApiStar?
+            Falcon?
           </section>
 
           <section data-markdown>
-            ### Python
-            ![python](./images/algoritmos-usta-2015/python-logo.png)
+            ### Backend
+            #### Python
+              ![python](./images/algoritmos-usta-2015/python-logo.png)
 
-              * Back-end
+            #### Desarrollo de API, qué opciones se barajan:
+              * [Django-rest-framework](http://www.django-rest-framework.org/)
+              * [Falcon](https://falconframework.org/)
+              * [Flask-api](http://www.flaskapi.org/)
+              * [Apistar](http://www.apistar.com/)
           </section>
 
           <section data-markdown>
-            ### Flask
-            ![flask](./images/algoritmos-usta-2015/flask-logo.png)
+            ### Frontend
+            #### React
+              ![react](./images/poc-tip-unq-2018/react-logo.png)
 
-              * Micro Framework para Python
-              * Jinja2 Templating
-              * Buena documentación
-              * Simple y rápido
+            #### Posibles a agregar en caso de ser necesario:
+              * Redux
+              * Firebase?
+          </section>
+
+          <section data-markdown>
+            ### Electron
+            ![electron](./images/poc-tip-unq-2018/electron-logo.svg)
+
+              * Cross-platform app
+              * Desktop app
+              * Desktop integration, ej: notificaciones nativas
           </section>
 
           <section data-markdown>
             ### Gitlab
-            ![github](./images/poc-tip-unq-2018/gitlab-logo.png)
+            ![gitlab](./images/poc-tip-unq-2018/gitlab-logo.png)
 
               * Repositorio git
               * Continous Integration (CI)
@@ -91,6 +143,7 @@
               * Diseño mientras creo mis tests
               * Modelo acotado, sin cosas de más
               * Aseguro que no rompo funcionalidades anteriores con nuevos cambios
+              * Sobre backend seguro. Y sobre frontend? No sé
 
             ![tdd](./images/algoritmos-usta-2015/tdd.png)
           </section>
@@ -99,7 +152,9 @@
             ### UML - Unified Modeling Language
 
               * Diseño de ideas
-              * Modelado antes de programar
+              * Diagramas de flujo, casos de uso, etcétera.
+
+            ![poc-use-case-diagram](./images/poc-tip-unq-2018/poc-use-case-diagram.png)
           </section>
         </section>
 
@@ -116,8 +171,8 @@
           ## THE END - Gracias!
 
           * Links de interés:
-            * [Gitlab repo](https://gitlab.com/cravacuore/rawRSS/): https://gitlab.com/cravacuore/rawRSS/
-            * [Wiki](https://gitlab.com/cravacuore/rawRSS/wikis/home): https://gitlab.com/cravacuore/rawRSS/wikis/home
+            * Gitlab repo: https://gitlab.com/cravacuore/rawRSS/
+            * Wiki: https://gitlab.com/cravacuore/rawRSS/wikis/home
         </section>
 
       </div>
