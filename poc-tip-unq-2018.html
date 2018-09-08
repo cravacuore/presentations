@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>rawRSS</title>
+    <meta name="description" content="Presentation of proof of concept for TIP - UNQ 2018">
+    <meta name="author" content="Cravacuore Damián">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+
+    <!-- Slides selected theme -->
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link  = document.createElement( 'link' );
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-markdown>
+          ## Presentación Prueba de Concepto TIP
+          #### rawRSS - TIP - UNQ - 2018
+
+          ![Logo rawRSS](./images/poc-tip-unq-2018/rawRSS-icon.png "Logo rawRSS")
+
+          Cravacuore, Damián
+        </section>
+
+        <section>
+          <section data-markdown>
+            ### ¿Qué tecnologías utilizo?
+          </section>
+
+          <section tagcloud large>
+            React
+            Electron
+            Python
+          </section>
+
+          <section data-markdown>
+            ### Python
+            ![python](./images/algoritmos-usta-2015/python-logo.png)
+
+              * Back-end
+          </section>
+
+          <section data-markdown>
+            ### Flask
+            ![flask](./images/algoritmos-usta-2015/flask-logo.png)
+
+              * Micro Framework para Python
+              * Jinja2 Templating
+              * Buena documentación
+              * Simple y rápido
+          </section>
+
+          <section data-markdown>
+            ### Gitlab
+            ![github](./images/poc-tip-unq-2018/gitlab-logo.png)
+
+              * Repositorio git
+              * Continous Integration (CI)
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            ## ¿Qué metodologías aplico?
+          </section>
+
+          <section data-markdown>
+            ### TDD - Test-Driven Development
+
+              * Diseño mientras creo mis tests
+              * Modelo acotado, sin cosas de más
+              * Aseguro que no rompo funcionalidades anteriores con nuevos cambios
+
+            ![tdd](./images/algoritmos-usta-2015/tdd.png)
+          </section>
+
+          <section data-markdown>
+            ### UML - Unified Modeling Language
+
+              * Diseño de ideas
+              * Modelado antes de programar
+          </section>
+        </section>
+
+        <section data-background="#d67e3e" data-markdown>
+          # Demo
+        </section>
+
+        <section style="text-align: left;" data-markdown>
+          ## ¿Preguntas?
+            ![questions](./images/algoritmos-usta-2015/questions.jpg)
+        </section>
+
+        <section style="text-align: left;" data-markdown>
+          ## THE END - Gracias!
+
+          * Links de interés:
+            * [Gitlab repo](https://gitlab.com/cravacuore/rawRSS/)
+            * [Wiki](https://gitlab.com/cravacuore/rawRSS/wikis/home)
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <!-- Reveal Settings -->
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          numbers: false,
+          markers: true,
+          themes: [
+            { name: 'Night', theme: 'css/theme/night.css' },
+            { name: 'Black', theme: 'css/theme/black.css' },
+            { name: 'Solarized', theme: 'css/theme/solarized.css' },
+          ],
+          transition: false,
+          openButton: false,
+          openSlideNumber: false,
+          keyboard: true,
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/menu/menu.js' },
+          { src: 'plugin/tagcloud/tagcloud.js', async: true }
+        ]
+      });
+
+    </script>
+
+    </body>
+  </html>
+
